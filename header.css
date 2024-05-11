@@ -8,3 +8,26 @@
   color: rgba(239, 236, 236);
   text-decoration: underline;
 }
+
+/* menu-mobile */
+.menu-mobile {
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+  position: fixed; /* Optional: to ensure the layout doesn't shift */
+  width: 100%;
+  width: 100vw;
+  z-index: 1;
+  top: 1%;
+  left: 0%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(44, 51, 47);
+  gap: 16px;
+}
+.menu-mobile li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgba(239, 236, 236);
+  padding: 12px 32px;
+}
