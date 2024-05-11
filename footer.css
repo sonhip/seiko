@@ -11,10 +11,10 @@
   align-items: center;
   gap: 32px;
 }
-.footer-first > div {
+/* .footer-first > div {
   display: flex;
   gap: 16px;
-}
+} */
 .footer-first > div > a {
   color: rgba(239, 236, 236, 0.75);
   text-decoration: none;
