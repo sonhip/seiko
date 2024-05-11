@@ -262,3 +262,22 @@ body {
   font-size: 16px;
   color: #252525bf;
 }
+
+/* contact page */
+/* shipping page*/
+.box-contact {
+  max-width: auto;
+  padding: 36px 200px;
+}
+.box-contact h2 {
+  font-size: 52px;
+  margin-bottom: 24px;
+}
+.contact-form {
+  margin: 32px 0;
+}
+@media (max-width: 576px) {
+  .box-contact {
+    padding: 24px 36px;
+  }
+}
