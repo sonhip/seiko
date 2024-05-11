@@ -56,6 +56,7 @@
   text-decoration: underline;
 }
 
+/* card feedback */
 .card-feedback {
   padding: 0 24px;
   display: flex;
@@ -75,4 +76,64 @@
   width: 80px;
   aspect-ratio: 1/1;
   overflow: hidden;
+}
+
+/* footer */
+.footer {
+  background-color: rgb(44, 51, 47);
+  color: rgba(239, 236, 236);
+}
+.footer-first {
+  padding: 36px 50px 50px 50px;
+  border-bottom: 0.1px solid rgba(239, 236, 236, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.footer-first > div {
+  display: flex;
+  gap: 16px;
+}
+.footer-first > div > a {
+  color: rgba(239, 236, 236, 0.75);
+  text-decoration: none;
+}
+.footer-first > div > a:hover {
+  color: rgba(239, 236, 236);
+  text-decoration: underline;
+}
+.footer-second {
+  padding: 36px 50px 76px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-selection p {
+  font-size: 16px;
+  color: rgba(239, 236, 236, 0.75);
+  margin-bottom: 10px;
+}
+.footer-selection select {
+  background-color: transparent;
+  color: white;
+}
+.footer-payment svg {
+  cursor: pointer;
+  margin-left: 8px;
+}
+.footer-payment p {
+  text-align: right;
+  color: rgba(239, 236, 236, 0.75);
+  font-size: 14px;
+  margin-top: 12px;
+}
+.footer-payment p a {
+  text-decoration: none;
+  color: rgba(239, 236, 236, 0.75);
+  font-size: 14px;
+}
+.footer-payment p a:hover {
+  text-decoration: underline;
+  color: rgba(239, 236, 236);
 }
