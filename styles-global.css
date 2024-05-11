@@ -277,7 +277,12 @@ body {
   margin: 32px 0;
 }
 @media (max-width: 576px) {
-  .box-contact {
+  .box-contact,
+  .box-about,
+  .box-shipping {
     padding: 24px 36px;
+  }
+  .box-table {
+    overflow-x: scroll;
   }
 }
