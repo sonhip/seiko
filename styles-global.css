@@ -198,3 +198,25 @@ body {
   position: fixed; /* Optional: to ensure the layout doesn't shift */
   width: 100%; /* Maintain the full width */
 }
+
+/* about us page*/
+.box-about {
+  padding: 36px 200px;
+}
+.box-about h2 {
+  font-size: 52px;
+}
+.box-description > p {
+  margin-top: 24px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #252525bf;
+}
+.box-description > p > a {
+  line-height: 34px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #252525bf;
+  font-weight: 600;
+}
