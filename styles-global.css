@@ -220,3 +220,45 @@ body {
   color: #252525bf;
   font-weight: 600;
 }
+
+/* shipping page*/
+.box-shipping {
+  padding: 36px 200px;
+}
+.box-shipping h2 {
+  text-align: center;
+  font-size: 52px;
+  margin-bottom: 24px;
+}
+.box-description > p {
+  margin-top: 16px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #252525bf;
+}
+.box-description > p > a {
+  line-height: 34px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #252525bf;
+  font-weight: 600;
+}
+.des-small {
+  margin-top: 56px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #252525bf;
+}
+
+/* table */
+.box-table {
+  margin-top: 32px;
+}
+.table-bordered td,
+.table-bordered th {
+  padding: 14px 12px !important;
+  border: 1px solid rgb(80, 86, 85, 0.2) !important; /* Ensuring border is applied */
+  font-size: 16px;
+  color: #252525bf;
+}
