@@ -198,18 +198,3 @@ body {
   position: fixed; /* Optional: to ensure the layout doesn't shift */
   width: 100%; /* Maintain the full width */
 }
-
-/* sidebar */
-#sidebar {
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
-}
-#sidebar.active {
-  transform: translateX(0);
-}
-@media (min-width: 768px) {
-  #sidebar,
-  .hamburger {
-    display: none;
-  }
-}
