@@ -116,7 +116,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
@@ -126,10 +126,11 @@ table {
 
 /* global css */
 body {
-  font-family: "Sedan SC", serif;
+  font-family: 'Sedan SC', serif;
   font-weight: 400;
   font-style: normal;
 }
+
 .container {
   max-width: 1200px;
 }
@@ -285,4 +286,9 @@ body {
   .box-table {
     overflow-x: scroll;
   }
+}
+
+/* search-component */
+.search-component {
+  display: block;
 }

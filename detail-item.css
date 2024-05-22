@@ -23,7 +23,7 @@
   position: absolute;
   left: 3%;
   top: 3%;
-  display: block;
+  display: none;
   z-index: 99;
 }
 
