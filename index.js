@@ -52,3 +52,12 @@ function toggleSearchBox() {
     // icon.classList.add('bi-list');
   }
 }
+
+// prevent close filter on seiko page
+document
+  .querySelectorAll('.dropdown-menu .item[data-stayopen="true"]')
+  .forEach(function (item) {
+    item.addEventListener('click', function (event) {
+      event.stopPropagation();
+    });
+  });
