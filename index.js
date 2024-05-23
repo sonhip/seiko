@@ -61,3 +61,18 @@ document
       event.stopPropagation();
     });
   });
+
+// counter in cart page
+document.addEventListener('DOMContentLoaded', function () {
+  const counter = document.getElementById('counter');
+  const incrementBtn = document.getElementById('increment');
+  const decrementBtn = document.getElementById('decrement');
+
+  incrementBtn.addEventListener('click', function () {
+    counter.textContent = parseInt(counter.textContent) + 1;
+  });
+
+  decrementBtn.addEventListener('click', function () {
+    counter.textContent = parseInt(counter.textContent) - 1;
+  });
+});
