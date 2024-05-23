@@ -8,6 +8,16 @@
   color: rgba(239, 236, 236);
   text-decoration: underline;
 }
+.box-seiko > a:hover {
+  color: rgba(239, 236, 236);
+  text-decoration: underline;
+}
+.box-seiko > a,
+i {
+  color: rgba(239, 236, 236, 0.75);
+  font-size: 16px;
+  text-decoration: none;
+}
 .box-header {
   display: flex;
 }
