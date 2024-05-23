@@ -23,9 +23,12 @@
     <!-- header -->
     <header class="bg-main">
       <div
-        class="container d-flex justify-content-between align-items-center pt-3 pe-sm-5 ps-sm-5 pb-0"
+        class="container box-header justify-content-between align-items-center pt-3 pe-sm-5 ps-sm-5 pb-0"
       >
-        <div class="zoom cursor-pointer d-md-block d-none">
+        <div
+          class="zoom cursor-pointer d-md-block d-none"
+          onclick="toggleSearchBox()"
+        >
           <i class="bi bi-search fs-4 text-white"></i>
         </div>
         <div
@@ -59,8 +62,31 @@
               <li>
                 <a href="./">Home</a>
               </li>
-              <li>
-                <a href="#">Seiko</a>
+              <li class="position-relative">
+                <a href="#" class="seiko" onclick="toggleSubmenu(event)">
+                  Seiko
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+                <div class="sub-menu">
+                  <a href="#">All Seikos</a>
+                  <a href="#">Actus</a>
+                  <a href="#">Advan</a>
+                  <a href="#">Bell-Matic</a>
+                  <a href="#">Champion</a>
+                  <a href="#">Credor</a>
+                  <a href="#">Cronos</a>
+                  <a href="#">Crown</a>
+                  <a href="#">Dolce</a>
+                  <a href="#">Grand</a>
+                  <a href="#">King</a>
+                  <a href="#">Liner/Skyliner</a>
+                  <a href="#">Lord</a>
+                  <a href="#">Seiko 5</a>
+                  <a href="#">Seikomatic</a>
+                  <a href="#">Speedtimer</a>
+                  <a href="#">Sportsman</a>
+                  <a href="#">Sportsmatic</a>
+                </div>
               </li>
               <li>
                 <a href="#">Citizen</a>
@@ -119,7 +145,7 @@
           </div>
         </div>
         <div class="d-flex gap-4 align-items-center">
-          <div class="zoom cursor-pointer">
+          <div class="zoom cursor-pointer" onclick="toggleSearchBox()">
             <i class="bi bi-search fs-4 text-white d-block d-md-none"></i>
           </div>
           <div class="zoom cursor-pointer">
@@ -127,6 +153,148 @@
           </div>
         </div>
       </div>
+      <!-- start search section -->
+      <div class="search-component">
+        <div
+          class="container justify-content-between align-items-center pt-3 pe-sm-5 ps-sm-5 pb-0"
+        >
+          <div class="row justify-content-center" style="padding: 90px 0">
+            <div class="col-lg-6" style="max-width: 476px">
+              <div
+                class="search-container search-product d-flex align-items-center gap-2"
+              >
+                <input
+                  value="k"
+                  autofocus
+                  type="text"
+                  class="form-control form-control-lg search-input"
+                  style="
+                    background-color: transparent;
+                    color: white;
+                    border-color: rgba(239, 236, 236, 0.75);
+                  "
+                  placeholder="Search..."
+                />
+                <i
+                  class="bi bi-x-lg"
+                  onclick="toggleSearchBox()"
+                  style="
+                    font-size: 24px;
+                    color: rgba(239, 236, 236, 0.75);
+                    cursor: pointer;
+                  "
+                ></i>
+              </div>
+              <div class="search-component-list">
+                <div class="title">products</div>
+                <div class="box">
+                  <div class="item">
+                    <div>
+                      <img src="https://placehold.co/450x450" alt="img" />
+                    </div>
+                    <div class="content">
+                      <p>1982 Seiko King Quartz 9923-702B</p>
+                      <p
+                        style="
+                          color: rgba(239, 236, 236, 0.7);
+                          margin-top: 12px;
+                        "
+                      >
+                        13.252.000 VND
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div>
+                      <img src="https://placehold.co/450x450" alt="img" />
+                    </div>
+                    <div class="content">
+                      <p>1982 Seiko King Quartz 9923-702B</p>
+                      <p
+                        style="
+                          color: rgba(239, 236, 236, 0.7);
+                          margin-top: 12px;
+                        "
+                      >
+                        13.252.000 VND
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div>
+                      <img src="https://placehold.co/450x450" alt="img" />
+                    </div>
+                    <div class="content">
+                      <p>1982 Seiko King Quartz 9923-702B</p>
+                      <p
+                        style="
+                          color: rgba(239, 236, 236, 0.7);
+                          margin-top: 12px;
+                        "
+                      >
+                        13.252.000 VND
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div>
+                      <img src="https://placehold.co/450x450" alt="img" />
+                    </div>
+                    <div class="content">
+                      <p>1982 Seiko King Quartz 9923-702B</p>
+                      <p
+                        style="
+                          color: rgba(239, 236, 236, 0.7);
+                          margin-top: 12px;
+                        "
+                      >
+                        13.252.000 VND
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div>
+                      <img src="https://placehold.co/450x450" alt="img" />
+                    </div>
+                    <div class="content">
+                      <p>1982 Seiko King Quartz 9923-702B</p>
+                      <p
+                        style="
+                          color: rgba(239, 236, 236, 0.7);
+                          margin-top: 12px;
+                        "
+                      >
+                        13.252.000 VND
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div>
+                      <img src="https://placehold.co/450x450" alt="img" />
+                    </div>
+                    <div class="content">
+                      <p>1982 Seiko King Quartz 9923-702B</p>
+                      <p
+                        style="
+                          color: rgba(239, 236, 236, 0.7);
+                          margin-top: 12px;
+                        "
+                      >
+                        13.252.000 VND
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="des">
+                  <p>Search for "k"</p>
+                  <i style="cursor: pointer" class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end search section -->
     </header>
     <!-- header -->
 
@@ -448,7 +616,8 @@
               </svg>
             </div>
             <p>
-              © 2024, <a href="/" title="">TokeiMedic </a>
+              © 2024,
+              <a href="/" title="">TokeiMedic</a>
               <a target="_blank" rel="nofollow" href="#">Powered by Shopify</a>
             </p>
           </div>

@@ -36,17 +36,18 @@ document.body.addEventListener('click', function (event) {
 function toggleSearchBox() {
   const body = document.body;
   const searchComponent = document.querySelector('.search-component');
+  const boxHeader = document.querySelector('.box-header');
 
   if (searchComponent.style.display === 'none') {
     searchComponent.style.display = 'block';
+    boxHeader.style.display = 'none';
     body.classList.add('body-no-scroll');
-    body.classList.add('modal-overlay');
     // icon.classList.remove('bi-list');
     // icon.classList.add('bi-x');
   } else {
     searchComponent.style.display = 'none';
+    boxHeader.style.display = 'flex';
     body.classList.remove('body-no-scroll');
-    body.classList.remove('modal-overlay');
     // icon.classList.remove('bi-x');
     // icon.classList.add('bi-list');
   }

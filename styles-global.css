@@ -287,8 +287,3 @@ body {
     overflow-x: scroll;
   }
 }
-
-/* search-component */
-.search-component {
-  display: block;
-}
