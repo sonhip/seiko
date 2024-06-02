@@ -16,6 +16,17 @@ function toggleSidebar() {
   }
 }
 
+function toggleSubMenuSeiko() {}
+function toggleSubMenuSeiko() {
+  const defaultMenu = document.querySelector('.menu-mobile-default');
+  const selectedMenu = document.querySelector('.menu-mobile-selected-seiko');
+
+  defaultMenu.style.display =
+    defaultMenu.style.display === 'none' ? 'block' : 'none';
+  selectedMenu.style.display =
+    selectedMenu.style.display === 'none' ? 'block' : 'none';
+}
+
 // toggle submenu
 function toggleSubmenu(event) {
   event.stopPropagation(); // Prevent the click event from propagating to the document body
