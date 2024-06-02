@@ -37,19 +37,18 @@ function toggleSearchBox() {
   const body = document.body;
   const searchComponent = document.querySelector('.search-component');
   const boxHeader = document.querySelector('.box-header');
+  const computedStyle = window.getComputedStyle(searchComponent);
+  const displayStyle = computedStyle.getPropertyValue('display');
 
-  if (searchComponent.style.display === 'none') {
+  if (displayStyle === 'none') {
+    console.log('xxxx');
     searchComponent.style.display = 'block';
     boxHeader.style.display = 'none';
     body.classList.add('body-no-scroll');
-    // icon.classList.remove('bi-list');
-    // icon.classList.add('bi-x');
   } else {
     searchComponent.style.display = 'none';
     boxHeader.style.display = 'flex';
     body.classList.remove('body-no-scroll');
-    // icon.classList.remove('bi-x');
-    // icon.classList.add('bi-list');
   }
 }
 
@@ -68,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const incrementBtn = document.getElementById('increment');
   const decrementBtn = document.getElementById('decrement');
 
+  if (!counter) return;
   incrementBtn.addEventListener('click', function () {
     counter.textContent = parseInt(counter.textContent) + 1;
   });
